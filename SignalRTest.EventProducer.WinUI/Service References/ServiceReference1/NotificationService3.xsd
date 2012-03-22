@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/StreamInsight.Samples.Adapters.Wcf" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/StreamInsight.Samples.Adapters.Wcf" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:6412/SignalRTest/NotificationService.svc?xsd=xsd3" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:import schemaLocation="http://localhost:6412/SignalRTest/NotificationService.svc?xsd=xsd4" namespace="http://schemas.datacontract.org/2004/07/System" />
+  <xs:import schemaLocation="http://localhost:6412/SignalRTest/NotificationService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:complexType name="WcfPointEvent">
+    <xs:annotation>
+      <xs:appinfo>
+        <IsValueType xmlns="http://schemas.microsoft.com/2003/10/Serialization/">true</IsValueType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element minOccurs="0" name="IsInsert" type="xs:boolean" />
+      <xs:element xmlns:q1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="Payload" nillable="true" type="q1:ArrayOfKeyValueOfstringanyType" />
+      <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/System" minOccurs="0" name="StartTime" type="q2:DateTimeOffset" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="WcfPointEvent" nillable="true" type="tns:WcfPointEvent" />
+  <xs:simpleType name="ResultCode">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Success" />
+      <xs:enumeration value="Suspended" />
+      <xs:enumeration value="Stopped" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="ResultCode" nillable="true" type="tns:ResultCode" />
+</xs:schema>

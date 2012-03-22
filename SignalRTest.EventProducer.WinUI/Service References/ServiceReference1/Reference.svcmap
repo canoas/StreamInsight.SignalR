@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="b58d3989-2bc5-413e-9502-01cdf15b32d7" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:6412/SignalRTest/NotificationService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="NotificationService.wsdl" MetadataType="Wsdl" ID="2aead862-4024-4bc4-880d-26735884ad9d" SourceId="1" SourceUrl="http://localhost:6412/SignalRTest/NotificationService.svc?wsdl" />
+    <MetadataFile FileName="NotificationService.xsd" MetadataType="Schema" ID="05403dc2-6e79-407c-9899-753989713064" SourceId="1" SourceUrl="http://localhost:6412/SignalRTest/NotificationService.svc?xsd=xsd4" />
+    <MetadataFile FileName="NotificationService1.xsd" MetadataType="Schema" ID="9c550ce7-3361-4384-b797-0125241018ce" SourceId="1" SourceUrl="http://localhost:6412/SignalRTest/NotificationService.svc?xsd=xsd0" />
+    <MetadataFile FileName="NotificationService2.xsd" MetadataType="Schema" ID="0366c842-603b-48dd-a919-eef84c870ae2" SourceId="1" SourceUrl="http://localhost:6412/SignalRTest/NotificationService.svc?xsd=xsd3" />
+    <MetadataFile FileName="NotificationService3.xsd" MetadataType="Schema" ID="ac07e314-8623-4961-9c22-54e0c5befadc" SourceId="1" SourceUrl="http://localhost:6412/SignalRTest/NotificationService.svc?xsd=xsd2" />
+    <MetadataFile FileName="NotificationService4.xsd" MetadataType="Schema" ID="d617994d-8ae9-47f6-b837-c1535ca73ea4" SourceId="1" SourceUrl="http://localhost:6412/SignalRTest/NotificationService.svc?xsd=xsd1" />
+    <MetadataFile FileName="NotificationService.disco" MetadataType="Disco" ID="93315fd9-1a78-4d4a-ad60-f4602225c901" SourceId="1" SourceUrl="http://localhost:6412/SignalRTest/NotificationService.svc?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
